@@ -1,0 +1,14 @@
+{
+    "name": "brisen/podio",
+    "description": "Podio webhook for creating PDF invoices",
+    "authors": [
+        {
+            "name": "Martin Müntzing",
+            "email": "martin.muntzing@gmail.com"
+        }
+    ],
+    "require": {
+        "podio/podio-php": "^4.3",
+        "dompdf/dompdf": "^0.6.2"
+    }
+}
