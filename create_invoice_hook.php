@@ -4,14 +4,10 @@
 require_once __DIR__.'/vendor/autoload.php';
 
 // init Podio
-define("CLIENT_ID", "brisen-podio");
-define("CLIENT_SECRET", "j0MW9wcsJ6ZeWGK3snnYIvsGOd8Y9oQwI12dfikCwj74uCUVyhy4jgFI5v4FUJVM");
-define("APP_ID", "15688604");
-define("APP_TOKEN", "7719f0975bd84b569a07a521553b6466");
-
-Podio::set_debug(false);
+include_once __DIR__.'/config.php';
 Podio::setup(CLIENT_ID, CLIENT_SECRET);
 Podio::authenticate_with_app(APP_ID, APP_TOKEN);
+Podio::set_debug(false);
 
 
 // init DOMPDF
